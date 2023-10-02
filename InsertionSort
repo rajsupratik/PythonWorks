@@ -1,0 +1,13 @@
+#Insertion Sort
+
+def insertionSort(array):
+    print(array)
+    for a in range(1, len(array)):
+        b = a
+        while b > 0 and array[b] < array[b-1]:
+            array[b],array[b-1] = array[b-1],array[b]
+            b -= 1
+            print(array)
+
+array = [8,4,6,9,16,12,11]
+insertionSort(array)
