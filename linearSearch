@@ -1,0 +1,15 @@
+# LinearSearch
+def linearSearch(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
+
+mylist = [4, 5, 7, 3, 2, 8]
+target_list = 3
+
+result = linearSearch(mylist, target_list)
+if result != -1:
+    print(f"The element {target_list} is present in {result} positon")
+else:
+    print(f"The element {target_list} is not present in this list")
