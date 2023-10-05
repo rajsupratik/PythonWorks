@@ -1,0 +1,13 @@
+# quickSort
+def quickSort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quickSort(left) + middle + quickSort(right)
+
+data = [40, 21, 9, 17, 51, 34]
+sorted_list = quickSort(data)
+print(sorted_list)
